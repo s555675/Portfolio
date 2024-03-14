@@ -1,0 +1,428 @@
+section {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.container1 {
+    width: 600px;
+    height: 500px;
+    padding: 70px 70px;
+    margin-left: 120px;
+
+}
+
+.heading1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar {
+    font-size: 23px;
+}
+
+.Technical-bars .bar {
+    margin-top: 40px;
+}
+
+.Technical-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.Technical-bars .bar:last-child {
+    margin-bottom: 0;
+}
+
+.Technical-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.Technical-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes animate {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000105;
+    animation: animate 1s cubic-bezier(1, 0, 0, 1) forwards;
+    transform-origin: left;
+}
+
+
+
+
+.Technical-bars .bar .progress-line span {
+    height: 100%;
+    background-color: #049fcf;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span {
+    width: 92%;
+}
+
+.progress-line.css span {
+    width: 90%;
+}
+
+.progress-line.JavaScript span {
+    width: 80%;
+}
+
+.progress-line.React span {
+    width: 82%;
+}
+
+.progress-line.Angular span {
+    width: 75%;
+}
+
+.progress-line.Java span {
+    width: 70%;
+}
+
+.progress-line.TypeScript span {
+    width: 65%;
+}
+
+.progress-line.MongoDBspan {
+    width: 90%;
+}
+
+.progress-line.MySQL span {
+    width: 90%;
+}
+
+.progress-line.Python span {
+    width: 85%;
+}
+
+.progress-line.AWS span {
+    width: 80%;
+}
+
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000000;
+    color: whitesmoke;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after {
+    content: 92%;
+}
+
+.progress-line.css span::after {
+    content: 90%;
+}
+
+.progress-line.JavaScript span::after {
+    content: 80%;
+}
+
+.progress-line.React span::after {
+    content: 82%;
+}
+
+.progress-line.Angular span::after {
+    content: 75%;
+}
+
+.progress-line.Java span::after {
+    content: 70%;
+}
+
+.progress-line.TypeScript span::after {
+    content: 65%;
+}
+
+.progress-line.MySQL span::after {
+    content: 90%;
+}
+
+.progress-line.Python span::after {
+    content: 85%;
+}
+
+.progress-line.AWS span::after {
+    content: 80%;
+}
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-bar {
+    fill: none;
+    stroke: #ccc;
+    /* color of the progress bar */
+    stroke-width: 10;
+    /* width of the progress bar */
+    stroke-linecap: round;
+    /* round line ends */
+}
+
+.path-1 {
+    fill: none;
+    stroke: #05c1eb;
+    /* color of the progress */
+    stroke-width: 10;
+    /* width of the progress */
+    stroke-linecap: round;
+    /* round line ends */
+    stroke-dasharray: 502.65;
+    /* circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 502.65;
+    /* full circumference initially */
+    animation: fillCircle 2s ease forwards;
+    /* animated transition */
+}
+
+@keyframes fillCircle {
+    to {
+        stroke-dashoffset: 0;
+        /* reveal the entire circle */
+    }
+}
+
+.path-2 {
+    fill: none;
+    stroke: #05c1eb;
+    /* color of the progress */
+    stroke-width: 10;
+    /* width of the progress */
+    stroke-linecap: round;
+    /* round line ends */
+    stroke-dasharray: 460;
+    /* circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 502.65;
+    /* full circumference initially */
+    animation: Circle 2s ease forwards;
+    /* animated transition */
+}
+
+@keyframes Circle {
+    to {
+        stroke-dashoffset: 5;
+        /* reveal the entire circle */
+    }
+}
+
+.path-3 {
+    fill: none;
+    stroke: #05c1eb;
+    /* color of the progress */
+    stroke-width: 10;
+    /* width of the progress */
+    stroke-linecap: round;
+    /* round line ends */
+    stroke-dasharray: 420;
+    /* circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 502.65;
+    /* full circumference initially */
+    animation: fillC 2s ease forwards;
+    /* animated transition */
+}
+
+@keyframes fillC {
+    to {
+        stroke-dashoffset: 10;
+        ;
+        /* reveal the entire circle */
+    }
+}
+
+.path-4 {
+    fill: none;
+    stroke: #05c1eb;
+    /* color of the progress */
+    stroke-width: 10;
+    /* width of the progress */
+    stroke-linecap: round;
+    /* round line ends */
+    stroke-dasharray: 390;
+    /* circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 506.65;
+    /* full circumference initially */
+    animation: fillCir 2s ease forwards;
+    /* animated transition */
+}
+
+@keyframes fillCir {
+    to {
+        stroke-dashoffset: 15;
+        /* reveal the entire circle */
+    }
+}
+
+
+.percentage {
+    font-size: 30px;
+    color: #010607;
+    /* color of the percentage */
+    /* margin-top: 10px; */
+}
+
+.text {
+    font-size: 18px;
+    color: #333;
+    /* color of the text */
+    /* margin-top: 20px; */
+}
+
+.radial-bars {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.radial-bars .radial-bar {
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.radial-bars .radial-bar svg {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.radial-bars .progress-bar {
+    stroke-width: 10px;
+    /* Set the stroke width */
+    stroke: #000;
+    /* Set the color of the stroke */
+    fill: transparent;
+    /* Make the circle transparent */
+    stroke-dasharray: 502;
+    /* Set the length of the dash array */
+    stroke-dashoffset: 502;
+    /* Set the initial offset to the full length */
+    stroke-linecap: round;
+    /* Set the style of the line endings */
+    animation: animate-bar 1s linear forwards;
+    /* Apply animation */
+}
+
+@keyframes animate-bar {
+    to {
+        stroke-dashoffset: 0;
+        /* Animate the stroke dash offset to 0 */
+
+    }
+}
+
+
+.edu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: linear-gradient(#004E64 #0ef);
+}
+
+.Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: center;
+    gap: 100px 50px;
+    padding: 180px 50px;
+}
+
+.Container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px #000105;
+    transition: 0.5s;
+}
+
+.Container .card:hover {
+    height: 400px;
+}
+
+.Container .card .imgbx {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.Container .card:hover .imgbx {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px #000105;
+
+}
+
+.Container .card .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
