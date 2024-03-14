@@ -1,0 +1,104 @@
+.edu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: linear-gradient(#004E64 #0ef);
+    margin-top: 10px;
+}
+
+.Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: center;
+    gap: 100px 50px;
+    padding: 180px 50px;
+}
+
+.Container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px #000105;
+    transition: 0.5s;
+}
+
+.Container .card:hover {
+    height: 920px;
+}
+
+.Container .card .imgbox {
+    position: absolute;
+    top: 10px;
+    width: 348px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 300px;
+}
+
+.Container .card:hover .imgbox {
+    top: 20px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px #000105;
+
+}
+
+.Container .card .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.Container .card .content {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 120px;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.Container .card:hover .content {
+    top: 240px;
+    height: 750px;
+    overflow: hidden;
+}
+
+.Container .card .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.Container .card .content p {
+    color: #333;
+    font-size: 1.05em;
+
+}
+
+.Container .card .content a {
+    text-decoration: none;
+    top: 80px;
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: var(--clr);
+    color: blueviolet;
+    font-size: 500;
+    border-radius: 8px;
+}
