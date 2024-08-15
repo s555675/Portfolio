@@ -133,7 +133,7 @@ export function Projects() {
           My <span>Projects</span>
         </h1>
         <span className="section_subtitle">
-          <h3> My experience with different projects</h3>
+          <h3> My Academics/Professional Projects</h3>
         </span>
         <Carousel
           className="projects__container"
@@ -161,10 +161,7 @@ export function Projects() {
         </Carousel>
       </section>
       {/* <ScrollDown/> */}
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+     
     </div>
   );
 }

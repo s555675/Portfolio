@@ -7,10 +7,10 @@ export function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm(
-      "service_76oo8ev",
-      "template_nafug8p",
+      "service_umpj8bp",
+      "template_d2yl32m",
       form.current,
-      "_02cKqtFytgFqRVlP"
+      "DhHImJwVvadAQohx2"
     );
     // .then((result)=>{
     //     console.log(result.text);
@@ -18,6 +18,7 @@ export function Contact() {
     //     console.log(error.text);
     // });
     e.target.reset();
+    alert('form has been submitted')
   };
 
   const contactRef = useRef(null);
