@@ -38,7 +38,7 @@ export function Home() {
         <h1>
           I'm Ishaaq <span>Shaik </span>
         </h1>
-        <h3> In am a Web Developer with Python </h3>
+        <h3> I am a Web Developer/React Developer and <br/>also a Python Developer </h3>
         <p>
           This is my official Website to shows all
           <br />
